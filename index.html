@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scraped Data</title>
+</head>
+<body>
+    <h1>Scraped Data</h1>
+    {% for table in tables %}
+        {{ titles[loop.index0] }}
+        {{ table|safe }}
+    {% endfor %}
+</body>
+</html>
